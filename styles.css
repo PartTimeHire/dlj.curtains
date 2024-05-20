@@ -8,22 +8,12 @@ header {
     background-color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
 .logo {
     font-size: 24px;
-    font-weight: bold;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    text-decoration: none;
-    color: #333;
     font-weight: bold;
 }
 .banner {
@@ -45,34 +35,9 @@ nav a {
     padding: 20px;
     border-radius: 10px;
 }
-.cta-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-#intro, #featured-products, #gallery {
+#intro, #gallery {
     padding: 40px 20px;
     text-align: center;
-}
-.product-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.product-item {
-    width: 45%;
-}
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-.product-item p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
 }
 .gallery-images {
     display: flex;
