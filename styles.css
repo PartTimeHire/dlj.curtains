@@ -5,7 +5,7 @@ body {
     color: #333;
 }
 header {
-    background-color: #fff;
+    background-color: #f8f9fa;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ header {
 .banner-image {
     width: 100%;
     height: auto;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .banner-text {
     position: absolute;
@@ -52,15 +52,21 @@ header {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 footer form {
     display: inline-block;
+    margin-top: 10px;
 }
 footer input[type="email"] {
     padding: 5px;
@@ -68,7 +74,7 @@ footer input[type="email"] {
 }
 footer button {
     padding: 5px 10px;
-    background-color: #007BFF;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
