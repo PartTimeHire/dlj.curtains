@@ -2,23 +2,46 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff;
+    background-color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #f8f9fa;
+    background-color: #444;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
 }
 
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #007bff;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 .banner {
@@ -33,20 +56,46 @@ header {
     opacity: 0.8;
 }
 
-#intro, #gallery {
+#intro {
     padding: 60px 20px;
     text-align: center;
 }
 
-#intro h2, #gallery h2 {
+#intro h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 #intro p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .gallery-images {
@@ -75,11 +124,11 @@ header {
 }
 
 footer {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #444;
+    color: #fff;
     text-align: center;
     padding: 20px 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #555;
 }
 
 footer p {
@@ -96,9 +145,11 @@ footer form {
 footer input[type="email"] {
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #333;
+    color: #fff;
 }
 
 footer button {
