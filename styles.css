@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
+
 header {
     background-color: #f8f9fa;
     padding: 20px;
@@ -12,70 +14,104 @@ header {
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
+
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    color: #007bff;
 }
+
 .banner {
     position: relative;
     text-align: center;
     color: #fff;
 }
+
 .banner-image {
     width: 100%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.8;
 }
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
+
 #intro, #gallery {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
+
+#intro h2, #gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 .gallery-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .gallery-item {
     width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
-.gallery-item img:hover {
+
+.gallery-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #f8f9fa;
+    color: #333;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
 }
+
+footer p {
+    margin: 5px 0;
+}
+
 footer form {
-    display: inline-block;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
+
 footer input[type="email"] {
-    padding: 5px;
+    padding: 10px;
     margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
+
 footer button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #0056b3;
 }
